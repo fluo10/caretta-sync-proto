@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package caretta_sync.device;
+
+import "caretta_sync/device/info_request.proto";
+import "caretta_sync/device/info_response.proto";
+import "caretta_sync/device/list_request.proto";
+import "caretta_sync/device/list_response.proto";
+import "caretta_sync/device/ping_request.proto";
+import "caretta_sync/device/ping_response.proto";
+
+
+service DeviceService {
+    rpc Ping(PingRequest) returns (PingResponse);
+    rpc Info(InfoRequest) returns (InfoResponse);
+    rpc List(ListRequest) returns (ListResponse);
+}

@@ -1,0 +1,20 @@
+syntax = "proto3";
+package caretta_sync.verification;
+
+import "caretta_sync/verification/info_request.proto";
+import "caretta_sync/verification/info_response.proto";
+import "caretta_sync/verification/list_request.proto";
+import "caretta_sync/verification/list_response.proto";
+import "caretta_sync/verification/reject_request.proto";
+import "caretta_sync/verification/reject_response.proto";
+import "caretta_sync/verification/request_request.proto";
+import "caretta_sync/verification/request_response.proto";
+
+
+
+service VerificationService {
+    rpc Request(RequestRequest) returns (RequestResponse);
+    rpc Reject(RejectRequest) returns (RejectResponse);
+    rpc Info(InfoRequest) returns (InfoResponse);
+    rpc List(ListRequest) returns (ListResponse);
+}

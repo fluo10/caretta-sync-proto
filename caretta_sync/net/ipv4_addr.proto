@@ -2,6 +2,6 @@ syntax = "proto3";
 package caretta_sync.net;
 
 message Ipv4Addr {
-    uint32 bits = 1;
+    uint32 value = 1;
 }
 

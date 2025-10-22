@@ -12,7 +12,7 @@ message Source {
     message NamedApp {
         string value = 1;
     }
-    oneof source_value {
+    oneof value {
             Saved saved = 1;
             Udp udp = 2;
             Relay relay = 3;

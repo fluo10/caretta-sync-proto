@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package caretta_sync.device;
+
+import "mtid/dtid.proto";
+import "caretta_sync/iroh/public_key.proto";
+
+
+message Identifier {
+    oneof value {
+        mtid.Dtid id = 1;
+        string name = 2;
+        caretta_sync.iroh.PublicKey public_key = 3;
+    }
+}

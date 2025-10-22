@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package caretta_sync.device;
+import "google/protobuf/duration.proto";
+
+message PingResponse {
+    google.protobuf.Duration rtt = 1;
+}

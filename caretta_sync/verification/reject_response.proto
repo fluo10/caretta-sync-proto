@@ -1,0 +1,8 @@
+syntax = "proto3";
+package caretta_sync.verification;
+
+import "caretta_sync/verification/info.proto";
+
+message RejectResponse {
+    Info verification_info = 1;
+}

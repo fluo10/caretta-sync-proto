@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package caretta_sync.device;
+
+message ListRequest{
+    enum Filter {
+        UNSPECIFIED = 0;
+        ALL = 1;
+        DISCOVERED = 2;
+    }
+
+    Filter filter = 1;
+}

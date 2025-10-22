@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package caretta_sync.device;
+
+import "caretta_sync/device/identifier.proto";
+
+message PingRequest {
+    Identifier target = 1;
+}

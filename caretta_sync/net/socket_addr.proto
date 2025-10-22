@@ -7,7 +7,7 @@ import "caretta_sync/net/socket_addr_v6.proto";
 
 // Protobuf message of std::net::SocketAddr.
 message SocketAddr {
-    oneof socket_addr_value {
+    oneof value {
         SocketAddrV4 v4 = 1;
         SocketAddrV6 v6 = 2;
     }

@@ -1,12 +1,13 @@
 syntax = "proto3";
 
-package caretta_sync.authorized_node;
+package caretta_sync.device;
 
-import "mtid/stid.proto";
+import "mtid/dtid.proto";
 import "caretta_sync/iroh/public_key.proto";
 
+// Device information returned from server.
 message Info {
-    mtid.Stid id = 1;
+    mtid.Dtid id = 1;
     caretta_sync.iroh.PublicKey public_key = 2;
     string note = 3;
 }
