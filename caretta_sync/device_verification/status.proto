@@ -1,0 +1,30 @@
+syntax = "proto3";
+package caretta_sync.device_verification;
+
+import "google/protobuf/timestamp.proto";
+
+message Status {
+    message Pending {
+        google.protobuf.Timestamp expires_at = 1;
+    }
+    message Approved {
+        google.protobuf.Timestamp approved_at = 1;
+    }
+    message Rejected {
+        google.protobuf.Timestamp rejected_at = 1;
+    }
+    message Expired {
+        google.protobuf.Timestamp expired_at = 1;
+    }
+    message Canceled {
+        google.protobuf.Timestamp canceled_at = 1;
+    }
+    oneof value {
+        Pending pending = 1;
+        Approved approved = 2;
+        Rejected rejected = 3;
+        Expired expired = 4;
+        Canceled canceled = 5;
+    }
+}
+

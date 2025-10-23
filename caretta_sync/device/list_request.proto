@@ -3,11 +3,11 @@ syntax = "proto3";
 package caretta_sync.device;
 
 message ListRequest{
-    enum Filter {
+    enum Status {
         UNSPECIFIED = 0;
-        ALL = 1;
-        DISCOVERED = 2;
+        DISCOVERED = 1;
+        VERIFIED = 2;
+        PENDING_VERIFICATION = 3;
     }
-
-    Filter filter = 1;
+    repeated Status statuses = 1;
 }

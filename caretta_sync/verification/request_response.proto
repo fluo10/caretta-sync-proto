@@ -1,8 +1,0 @@
-syntax = "proto3";
-package caretta_sync.verification;
-
-import "caretta_sync/device/info.proto";
-
-message RequestResponse {
-    caretta_sync.device.Info device_info = 1;
-}

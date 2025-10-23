@@ -1,5 +1,5 @@
 syntax = "proto3";
-package caretta_sync.verification;
+package caretta_sync.device_verification;
 
 import "caretta_sync/device/identifier.proto";
 

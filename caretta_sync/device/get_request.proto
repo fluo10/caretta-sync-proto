@@ -4,6 +4,6 @@ package caretta_sync.device;
 
 import "caretta_sync/device/identifier.proto";
 
-message InfoRequest {
+message GetRequest {
     Identifier target = 1;
 }

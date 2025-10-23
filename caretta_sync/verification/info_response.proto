@@ -1,9 +1,0 @@
-syntax = "proto3";
-package caretta_sync.verification;
-
-import "caretta_sync/verification/info.proto";
-
-
-message InfoResponse{
-    Info verification_info = 1;
-}

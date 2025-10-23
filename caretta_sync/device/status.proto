@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package caretta_sync.device;
+
+import "mtid/dtid.proto";
+import "caretta_sync/iroh/public_key.proto";
+import "google/protobuf/timestamp.proto";
+
+// Device Status
+message Status {
+    message Discovered {
+        google.protobuf.Timestamp last_discovered_at = 1;
+    }
+    message Synced {
+        google.protobuf.Timestamp last_synced_at = 1;
+    }
+    message Verified {
+        google.protobuf.Timestamp verified_at = 1;
+    }
+    message PendingVerification {
+        google.protobuf.Timestamp expires_at = 1;
+    }
+    oneof value {
+        Discovered discovered = 1;
+        Synced synced = 2;
+        Verified verified = 3;
+        PendingVerification pending_verification = 4;
+    }
+}

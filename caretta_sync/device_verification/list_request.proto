@@ -1,0 +1,14 @@
+syntax = "proto3";
+package caretta_sync.device_verification;
+
+message ListRequest {
+    enum Status {
+        UNSPECIFIED = 0;
+        PENDING = 1;
+        APPROVED = 2;
+        REJECTED = 3;
+        EXPIRED = 4;
+        CANCELED = 5;
+    }
+    repeated Status statuses = 1;
+}

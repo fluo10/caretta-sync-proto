@@ -1,0 +1,7 @@
+syntax = "proto3";
+package caretta_sync.device_verification;
+import "mtid/dtid.proto";
+
+message RequestResponse {
+    mtid.Dtid verification_id = 1;
+}
