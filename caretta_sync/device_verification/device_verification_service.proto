@@ -14,7 +14,7 @@ import "caretta_sync/device_verification/request_response.proto";
 
 
 
-service VerificationService {
+service DeviceVerificationService {
     rpc Confirm(ConfirmRequest) returns (ConfirmResponse);
     rpc Request(RequestRequest) returns (RequestResponse);
     rpc Reject(RejectRequest) returns (RejectResponse);
