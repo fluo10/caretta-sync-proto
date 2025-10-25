@@ -1,5 +1,5 @@
 syntax = "proto3";
-package caretta_sync.net;
+package caretta_sync.types.net;
 
 message Ipv4Addr {
     uint32 bits = 1;

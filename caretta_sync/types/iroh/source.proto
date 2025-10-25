@@ -1,5 +1,5 @@
 syntax = "proto3";
-package caretta_sync.iroh;
+package caretta_sync.types.iroh;
 
 message Source {
     message Saved{}

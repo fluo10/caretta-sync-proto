@@ -1,7 +1,7 @@
 syntax = "proto3";
-package caretta_sync.net;
+package caretta_sync.types.net;
 
-import "caretta_sync/net/ipv4_addr.proto";
+import "caretta_sync/types/net/ipv4_addr.proto";
 
 message SocketAddrV4 {
     Ipv4Addr ip = 1;

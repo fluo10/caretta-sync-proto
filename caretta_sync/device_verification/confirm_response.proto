@@ -1,5 +1,0 @@
-syntax = "proto3";
-package caretta_sync.device_verification;
-import "mtid/dtid.proto";
-
-message ConfirmResponse {}

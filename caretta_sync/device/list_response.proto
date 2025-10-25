@@ -3,14 +3,14 @@ syntax = "proto3";
 package caretta_sync.device;
 
 import "mtid/dtid.proto";
-import "caretta_sync/iroh/public_key.proto";
+import "caretta_sync/types/iroh/public_key.proto";
 import "caretta_sync/device/status.proto";
 
 message ListResponse {
     message Item {
         mtid.Dtid device_id = 1;
         string device_name = 2;
-        caretta_sync.iroh.PublicKey public_key = 3;
+        caretta_sync.types.iroh.PublicKey public_key = 3;
         Status status = 4;
     }
     repeated Item items = 1;

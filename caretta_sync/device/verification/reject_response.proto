@@ -1,4 +1,4 @@
 syntax = "proto3";
-package caretta_sync.device_verification;
+package caretta_sync.device.verification;
 
 message RejectResponse {}

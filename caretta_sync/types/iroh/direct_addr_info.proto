@@ -1,10 +1,10 @@
 syntax = "proto3";
-package caretta_sync.iroh;
+package caretta_sync.types.iroh;
 
 import "google/protobuf/duration.proto";
-import "caretta_sync/iroh/control_msg.proto";
-import "caretta_sync/iroh/source.proto";
-import "caretta_sync/net/socket_addr.proto";
+import "caretta_sync/types/iroh/control_msg.proto";
+import "caretta_sync/types/iroh/source.proto";
+import "caretta_sync/types/net/socket_addr.proto";
 
 // A protobuf message of iroh::endpoint::DirectAddrInfo
 message DirectAddrInfo {
@@ -21,7 +21,7 @@ message DirectAddrInfo {
         google.protobuf.Duration duration = 2;
     }
 
-    caretta_sync.net.SocketAddr addr = 1;
+    caretta_sync.types.net.SocketAddr addr = 1;
     google.protobuf.Duration latency = 2;
     DurationControlMsg last_control = 3;
     google.protobuf.Duration last_payload = 4;

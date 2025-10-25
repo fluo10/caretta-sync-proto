@@ -1,8 +1,8 @@
 syntax = "proto3";
-package caretta_sync.device_verification;
+package caretta_sync.device.verification;
 
-import "caretta_sync/iroh/public_key.proto";
-import "caretta_sync/device_verification/status.proto";
+import "caretta_sync/types/iroh/public_key.proto";
+import "caretta_sync/device/verification/status.proto";
 import "mtid/dtid.proto";
 import "google/protobuf/timestamp.proto";
 
@@ -11,7 +11,7 @@ message ListResponse {
         mtid.Dtid verification_id = 1;
         mtid.Dtid device_id = 2;
         string device_name = 3;
-        caretta_sync.iroh.PublicKey public_key = 4;
+        caretta_sync.types.iroh.PublicKey public_key = 4;
         mtid.Dtid passcode = 5;
         Status status = 6;
         

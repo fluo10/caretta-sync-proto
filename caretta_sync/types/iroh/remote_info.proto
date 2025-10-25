@@ -1,10 +1,10 @@
 syntax = "proto3";
-package caretta_sync.iroh;
+package caretta_sync.types.iroh;
 
-import "caretta_sync/iroh/public_key.proto";
-import "caretta_sync/iroh/relay_url_info.proto";
-import "caretta_sync/iroh/direct_addr_info.proto";
-import "caretta_sync/iroh/connection_type.proto";
+import "caretta_sync/types/iroh/public_key.proto";
+import "caretta_sync/types/iroh/relay_url_info.proto";
+import "caretta_sync/types/iroh/direct_addr_info.proto";
+import "caretta_sync/types/iroh/connection_type.proto";
 import "google/protobuf/duration.proto";
 
 // A messege of iroh::RemoteInfo.

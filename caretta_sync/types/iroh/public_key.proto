@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package caretta_sync.iroh;
+package caretta_sync.types.iroh;
 
 // protobuf message of iroh::PublicKey.
 message PublicKey {

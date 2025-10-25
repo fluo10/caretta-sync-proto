@@ -1,0 +1,23 @@
+syntax = "proto3";
+package caretta_sync.device.verification;
+
+import "caretta_sync/device/verification/confirm_request.proto";
+import "caretta_sync/device/verification/confirm_response.proto";
+import "caretta_sync/device/verification/get_request.proto";
+import "caretta_sync/device/verification/get_response.proto";
+import "caretta_sync/device/verification/list_request.proto";
+import "caretta_sync/device/verification/list_response.proto";
+import "caretta_sync/device/verification/reject_request.proto";
+import "caretta_sync/device/verification/reject_response.proto";
+import "caretta_sync/device/verification/request_request.proto";
+import "caretta_sync/device/verification/request_response.proto";
+
+
+
+service VerificationService {
+    rpc Confirm(ConfirmRequest) returns (ConfirmResponse);
+    rpc Request(RequestRequest) returns (RequestResponse);
+    rpc Reject(RejectRequest) returns (RejectResponse);
+    rpc Get(GetRequest) returns (GetResponse);
+    rpc List(ListRequest) returns (ListResponse);
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package caretta_sync.device.verification;
+import "mtid/dtid.proto";
+
+message ConfirmResponse {
+    mtid.Dtid new_device_id = 1;
+}
