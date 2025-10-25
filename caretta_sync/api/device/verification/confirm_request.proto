@@ -1,0 +1,10 @@
+syntax = "proto3";
+package caretta_sync.api.device.verification;
+
+import "caretta_sync/api/device/identifier.proto";
+import "mtid/dtid.proto";
+
+message ConfirmRequest {
+    caretta_sync.api.device.Identifier verification = 1;
+    mtid.Dtid passcode = 2;    
+}

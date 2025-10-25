@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package caretta_sync.device.verification;
+package caretta_sync.api.device.verification;
 
 import "mtid/dtid.proto";
 import "caretta_sync/types/iroh/public_key.proto";

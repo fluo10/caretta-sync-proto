@@ -1,9 +1,9 @@
 syntax = "proto3";
 
-package caretta_sync.device;
+package caretta_sync.api.device;
 
 import "caretta_sync/types/iroh/remote_info.proto";
-import "caretta_sync/device/status.proto";
+import "caretta_sync/api/device/status.proto";
 import "mtid/dtid.proto";
 
 message GetResponse {

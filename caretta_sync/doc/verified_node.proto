@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package caretta_sync.doc;
+
+import "google/protobuf/timestamp.proto";
+import "mtid/dtid.proto";
+message VerifiedNode {
+    string name = 1;
+    google.protobuf.Timestamp created_at = 2;
+    google.protobuf.Timestamp updated_at = 3;
+    mtid.Dtid public_id = 4;
+}

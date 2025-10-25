@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package caretta_sync.device;
+package caretta_sync.api.device;
 
 import "mtid/dtid.proto";
 import "caretta_sync/types/iroh/public_key.proto";
-import "caretta_sync/device/status.proto";
+import "caretta_sync/api/device/status.proto";
 
 message ListResponse {
     message Item {

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package caretta_sync.device.verification;
+package caretta_sync.api.device.verification;
 
 import "google/protobuf/timestamp.proto";
 

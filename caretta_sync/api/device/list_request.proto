@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package caretta_sync.device;
+package caretta_sync.api.device;
 
 message ListRequest{
     enum Status {
