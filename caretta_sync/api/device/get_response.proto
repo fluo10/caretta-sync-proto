@@ -2,14 +2,15 @@ syntax = "proto3";
 
 package caretta_sync.api.device;
 
-import "caretta_sync/types/iroh/remote_info.proto";
 import "caretta_sync/api/device/status.proto";
+import "caretta_sync/types/iroh/public_key.proto";
+
 import "mtid/dtid.proto";
 
 message GetResponse {
     mtid.Dtid device_id = 1;
     string device_name = 2;
     Status status = 3;
-    caretta_sync.types.iroh.RemoteInfo remote_node_info = 4;
+    caretta_sync.types.iroh.PublicKey public_key = 4;
     string verified_node_note = 5;
 }
