@@ -1,5 +1,5 @@
 syntax = "proto3";
-package caretta_sync.api.device.verification;
+package caretta_sync.api.device_verification;
 import "mtid/dtid.proto";
 
 message ConfirmResponse {

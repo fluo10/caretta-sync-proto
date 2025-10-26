@@ -2,11 +2,14 @@ syntax = "proto3";
 
 package caretta_sync.doc;
 
+import "caretta_sync/types/iroh/public_key.proto";
 import "google/protobuf/timestamp.proto";
 import "mtid/dtid.proto";
+
 message VerifiedNode {
-    string name = 1;
-    google.protobuf.Timestamp created_at = 2;
-    google.protobuf.Timestamp updated_at = 3;
-    mtid.Dtid public_id = 4;
+    mtid.Dtid public_id = 1;
+    caretta_sync.types.iroh.PublicKey public_key = 2;
+    string name = 3;
+    google.protobuf.Timestamp created_at = 4;
+    google.protobuf.Timestamp updated_at = 5;
 }

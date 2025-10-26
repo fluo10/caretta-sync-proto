@@ -1,8 +1,8 @@
 syntax = "proto3";
-package caretta_sync.api.device.verification;
+package caretta_sync.api.device_verification;
 
 import "caretta_sync/types/iroh/public_key.proto";
-import "caretta_sync/api/device/verification/status.proto";
+import "caretta_sync/api/device_verification/status.proto";
 import "mtid/dtid.proto";
 import "google/protobuf/timestamp.proto";
 
