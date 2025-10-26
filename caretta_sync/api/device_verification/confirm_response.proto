@@ -1,7 +1,8 @@
 syntax = "proto3";
 package caretta_sync.api.device_verification;
-import "mtid/dtid.proto";
+import "caretta_sync/types/iroh/doc_namespace_secret.proto";
 
 message ConfirmResponse {
-    mtid.Dtid new_device_id = 1;
+    // Doc Secret of verified device document
+    caretta_sync.types.iroh.DocNamespaceSecret doc_secret = 1;
 }

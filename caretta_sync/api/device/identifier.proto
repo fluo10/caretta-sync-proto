@@ -3,13 +3,15 @@ syntax = "proto3";
 package caretta_sync.api.device;
 
 import "mtid/dtid.proto";
-import "caretta_sync/types/iroh/public_key.proto";
+import "caretta_sync/types/iroh/endpoint_id.proto";
+import "caretta_sync/types/iroh/endpoint_ticket.proto";
 
 
 message Identifier {
     oneof value {
         mtid.Dtid id = 1;
         string name = 2;
-        caretta_sync.types.iroh.PublicKey public_key = 3;
+        caretta_sync.types.iroh.EndpointId endpoint_id = 3;
+        caretta_sync.types.iroh.EndpointTicket endpoint_ticket = 4;
     }
 }
