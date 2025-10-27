@@ -1,9 +1,0 @@
-syntax = "proto3";
-package caretta_sync.api.device_verification;
-import "mtid/dtid.proto";
-import "caretta_sync/types/uuid/uuid.proto";
-
-message RequestResponse {
-    mtid.Dtid verification_id = 1;
-    caretta_sync.types.uuid.Uuid session_id = 2;
-}

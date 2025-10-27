@@ -1,8 +1,0 @@
-syntax = "proto3";
-package caretta_sync.api.device_verification;
-
-import "caretta_sync/api/device/identifier.proto";
-
-message RequestRequest {
-    caretta_sync.api.device.Identifier device = 1;
-}

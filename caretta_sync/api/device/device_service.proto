@@ -4,13 +4,19 @@ package caretta_sync.api.device;
 
 import "caretta_sync/api/device/get_request.proto";
 import "caretta_sync/api/device/get_response.proto";
+import "caretta_sync/api/device/invite_request.proto";
+import "caretta_sync/api/device/invite_response.proto";
+import "caretta_sync/api/device/join_request.proto";
+import "caretta_sync/api/device/join_response.proto";
 import "caretta_sync/api/device/list_request.proto";
 import "caretta_sync/api/device/list_response.proto";
 import "caretta_sync/api/device/ping_request.proto";
 import "caretta_sync/api/device/ping_response.proto";
 
 service DeviceService {
-    rpc Ping(PingRequest) returns (PingResponse);
     rpc Get(GetRequest) returns (GetResponse);
+    rpc Invite(InviteRequest) returns (InviteResponse);
+    rpc Join(JoinRequest) returns (JoinResponse);
     rpc List(ListRequest) returns (ListResponse);
+    rpc Ping(PingRequest) returns (PingResponse);
 }

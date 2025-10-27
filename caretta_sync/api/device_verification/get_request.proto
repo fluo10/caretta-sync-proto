@@ -1,8 +1,0 @@
-syntax = "proto3";
-package caretta_sync.api.device_verification;
-
-import "caretta_sync/api/device_verification/identifier.proto";
-
-message GetRequest {
-    Identifier target = 1;   
-}
