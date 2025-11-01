@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package caretta_sync.api.invitation_token;
+
+import "mtid/dtid.proto";
+import "caretta_sync/api/invitation_token/invitation_token.proto";
+import "caretta_sync/api/invitation_token/status.proto";
+import "google/protobuf/timestamp.proto";
+
+message GetResponse {
+    mtid.Dtid id = 1;
+    Status status = 2;
+    google.protobuf.Timestamp expires_at = 3;
+    // Optional
+    InvitationToken token = 4;
+}

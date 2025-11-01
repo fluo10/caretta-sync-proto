@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package caretta_sync.api.device;
 
-import "caretta_sync/api/device/invitation_token.proto";
+import "caretta_sync/api/invitation_token/invitation_token.proto";
 
 message InviteResponse {
-    InvitationToken token = 1;    
+    caretta_sync.api.invitation_token.InvitationToken token = 1;    
 }

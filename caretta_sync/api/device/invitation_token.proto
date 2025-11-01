@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package caretta_sync.api.device;
-
-message InvitationToken {
-    string value = 1;    
-}

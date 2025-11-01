@@ -2,13 +2,13 @@ syntax = "proto3";
 
 package caretta_sync.doc;
 
-import "caretta_sync/types/iroh/endpoint_id.proto";
+import "caretta_sync/types/iroh/public_key.proto";
 import "google/protobuf/timestamp.proto";
 import "mtid/dtid.proto";
 
 message AuthorizedNode {
     mtid.Dtid public_id = 1;
-    caretta_sync.types.iroh.EndpointId endpoint_id = 2;
+    caretta_sync.types.iroh.PublicKey public_key = 2;
     string name = 3;
     google.protobuf.Timestamp created_at = 4;
     google.protobuf.Timestamp updated_at = 5;

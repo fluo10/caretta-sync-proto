@@ -9,19 +9,11 @@ message Status {
     message Discovered {
         google.protobuf.Timestamp last_discovered_at = 1;
     }
-    message Synced {
+    message Authorized {
         google.protobuf.Timestamp last_synced_at = 1;
-    }
-    message Verified {
-        google.protobuf.Timestamp verified_at = 1;
-    }
-    message PendingVerification {
-        google.protobuf.Timestamp expires_at = 1;
     }
     oneof value {
         Discovered discovered = 1;
-        Synced synced = 2;
-        Verified verified = 3;
-        PendingVerification pending_verification = 4;
+        Authorized authorized = 2;
     }
 }

@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package caretta_sync.types.iroh;
-
-message EndpointTicket {
-    string value = 1;
-}

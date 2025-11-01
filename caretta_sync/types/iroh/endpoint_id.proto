@@ -1,8 +1,0 @@
-syntax = "proto3";
-
-package caretta_sync.types.iroh;
-
-// protobuf message of iroh::EndpointId.
-message EndpointId {
-    bytes value = 1;
-}

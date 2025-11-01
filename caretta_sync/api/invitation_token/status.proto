@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package caretta_sync.api.invitation_token;
+
+import "google/protobuf/timestamp.proto";
+
+// A statuc of invitation token
+message Status {
+    message Pending {
+        google.protobuf.Timestamp expires_at = 1;
+    }
+    message Used {
+        google.protobuf.Timestamp used_at = 1;
+    }
+    message Revoked {
+        google.protobuf.Timestamp revoked_at = 1;
+    }
+    message Expired {
+        google.protobuf.Timestamp expired_at = 1;
+    }
+    oneof value {
+        Pending pending = 1;
+        Used used = 2;
+        Revoked revoked = 3;
+        Expired expired = 4;
+    }
+}

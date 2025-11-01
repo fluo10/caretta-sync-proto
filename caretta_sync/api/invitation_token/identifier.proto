@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package caretta_sync.api.invitation_token;
+
+import "caretta_sync/api/invitation_token/invitation_token.proto";
+import "mtid/dtid.proto";
+
+message Identifier {
+    oneof value {
+        mtid.Dtid id = 1;
+        InvitationToken token = 2;
+    }
+}

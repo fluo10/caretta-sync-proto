@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package caretta_sync.api.invitation_token;
+
+import "mtid/dtid.proto";
+import "caretta_sync/api/invitation_token/status.proto";
+
+message ListResponse {
+    message Item {
+        mtid.Dtid id = 1;
+        Status status = 2;
+    }
+    repeated Item items = 1;
+}

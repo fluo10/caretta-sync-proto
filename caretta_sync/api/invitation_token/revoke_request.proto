@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package caretta_sync.api.invitation_token;
+
+import "caretta_sync/api/invitation_token/identifier.proto";
+
+message RevokeRequest{
+    Identifier target = 1;
+}
