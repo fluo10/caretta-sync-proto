@@ -9,7 +9,7 @@ import "caretta_sync/api/invitation_token/list_response.proto";
 import "caretta_sync/api/invitation_token/revoke_request.proto";
 import "caretta_sync/api/invitation_token/revoke_response.proto";
 
-service DeviceService {
+service InvitationTokenService {
     rpc Get(GetRequest) returns (GetResponse);
     rpc List(ListRequest) returns (ListResponse);
     rpc Revoke(RevokeRequest) returns (RevokeResponse);
