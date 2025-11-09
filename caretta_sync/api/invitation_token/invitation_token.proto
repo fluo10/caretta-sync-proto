@@ -3,5 +3,5 @@ syntax = "proto3";
 package caretta_sync.api.invitation_token;
 
 message InvitationToken {
-    string value = 1;
+    bytes value = 1;
 }
